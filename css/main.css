@@ -92,7 +92,34 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Header-styles
+   ========================================================================== */
+
+.header {
+    z-index: 100; /* Header should always be above any conent */
+    position: relative;
+    left: calc(50% - 20px);
+    right: 50%;
+}
+
+.header > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 540px) {
+    .header {
+        left: calc(50% - 15px);
+    }
+    .header > img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ==========================================================================
+   Article-specific custom styles
    ========================================================================== */
 
 
